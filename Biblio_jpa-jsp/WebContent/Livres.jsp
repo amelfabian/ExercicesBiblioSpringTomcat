@@ -15,6 +15,8 @@
 <c:if test="${fn:length(livres) > 1}">
 	<c:forEach var="a" items="${livres}">
 		<c:out value="${a.titre}"/>
+	  <a href="${pageContext.request.contextPath}/do/delLivres?ID=${a.id}&DELETE=true"><button>Delete</button></a>&nbsp;
+		
 		<br>
 	</c:forEach>
 </c:if>
@@ -24,7 +26,7 @@
 	<br/>
 	<br/>
 	
-	<form action="${pageContext.request.contextPath}/do/listLivres" method="post">
+	<form action="${pageContext.request.contextPath}/do/newLivres" method="post">
 	<fieldset>
 	<legend><b>Ajout d'un nouveau livre</b></legend>
 	<label>Nom</label>
