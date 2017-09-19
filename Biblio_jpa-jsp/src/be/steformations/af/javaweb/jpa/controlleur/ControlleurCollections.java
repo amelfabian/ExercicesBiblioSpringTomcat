@@ -32,16 +32,16 @@ public class ControlleurCollections {
 		public String createAndShowCollection(Map<String,Object> attribut,@org.springframework.web.bind.annotation.RequestParam("COLLECTION_NOM") String nom){
 				
 				if(!nom.matches("[A-Za-z]")){
-					attribut.put("OK", this.bibliomanager.addCollection(nom);
+					attribut.put("OK", this.bibliomanager.addCollection(nom));
 				}else{
 					attribut.put("OK", null);
 				}
 				return this.getListe(attribut);
 }
 		@org.springframework.web.bind.annotation.RequestMapping("delCollection")
-		public String delAuteur(@org.springframework.web.bind.annotation.RequestParam("ID") String code,@org.springframework.web.bind.annotation.RequestParam("DELETE") boolean del, Map<String,Object> param){
-			if(del && code.matches("^[0-9]*$")){
-				this.bibliomanager.delAuteur(code);
+		public String delAuteur(@org.springframework.web.bind.annotation.RequestParam("ID") String id,@org.springframework.web.bind.annotation.RequestParam("DELETE") boolean del, Map<String,Object> param){
+			if(del && id.matches("^[0-9]*$")){
+				this.bibliomanager.delAuteur(id);;
 			}
 			return this.getListe(param);
 		}

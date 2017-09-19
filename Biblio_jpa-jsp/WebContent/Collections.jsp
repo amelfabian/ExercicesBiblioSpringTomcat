@@ -31,8 +31,6 @@
 	<legend><b>Ajout d'une nouvelle collection</b></legend>
 	<label>Nom</label>
 	<input name="COLLECTION_NOM" type="text" size="25" maxlength="40"/> <br/>
-	<label>Prenom</label>
-	<input name="COLLECTION_PRENOM" type="text" size="25" maxlength="40"/> <br/>
 	<button>ajouter</button>
 	</fieldset>
 	</form>
