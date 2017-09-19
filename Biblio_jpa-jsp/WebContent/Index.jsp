@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,11 +8,17 @@
 </head>
 <body>
 
-	<h1> Gestion de bibliothèque</h1> 
-	
-	
-	<a href="${pageContext.request.contextPath}/do/listAuteurs"> gestion des auteurs</a> <br/>
-	<a href="${pageContext.request.contextPath}/do/listCollections"> gestion des collections</a><br/>
-	<a href="${pageContext.request.contextPath}/do/listLivres"> gestion des livres</a><br/>
+	<h1>Gestion de bibliothèque</h1>
+
+
+	<a href="${pageContext.request.contextPath}/do/listAuteurs">
+		gestion des auteurs</a>
+	<br />
+	<a href="${pageContext.request.contextPath}/do/listCollections">
+		gestion des collections</a>
+	<br />
+	<a href="${pageContext.request.contextPath}/do/listLivres"> gestion
+		des livres</a>
+	<br />
 </body>
 </html>
