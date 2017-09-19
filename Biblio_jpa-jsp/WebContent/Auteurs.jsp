@@ -9,8 +9,11 @@
 <title>Ex_Biblio</title>
 </head>
 <body>
-
-	<h1>Liste auteurs</h1>
+	<h1>Gestion de bibliotheque</h1>
+	<br />
+	<br />
+	<br />
+	<h2>Liste auteurs</h2>
 	<c:set var="auteurs" value="${requestScope['LISTE_AUTEURS']}" />
 
 	<c:if test="${fn:length(auteurs) > 1}">

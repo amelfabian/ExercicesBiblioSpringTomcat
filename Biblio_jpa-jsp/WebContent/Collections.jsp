@@ -9,7 +9,11 @@
 <title>Ex_Biblio</title>
 </head>
 <body>
-	<h1>Liste Collections</h1>
+	<h1>Gestion de bibliotheque</h1>
+	<br />
+	<br />
+	<br />
+	<h2>Liste Collections</h2>
 	<c:set var="collections" value="${requestScope['LISTE_COLLECTION']}" />
 
 	<c:if test="${fn:length(collections) > 1}">

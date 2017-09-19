@@ -9,8 +9,9 @@
 <body>
 
 	<h1>Gestion de bibliothèque</h1>
-
-
+	<br />
+	<br />
+	<br />
 	<a href="${pageContext.request.contextPath}/do/listAuteurs">
 		gestion des auteurs</a>
 	<br />
